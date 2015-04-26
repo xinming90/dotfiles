@@ -23,7 +23,7 @@
 	d = difftool
     slog = log --pretty=format:"%C(auto,yellow)%h%C(auto)%d\\ %C(auto,reset)%s\\ \\ [%C(auto,blue)%cn%C(auto,reset),\\ %C(auto,cyan)%ar%C(auto,reset)]"
     glog = log --graph --pretty=format:"%C(auto,yellow)%h%C(auto)%d\\ %C(auto,reset)%s\\ \\ [%C(auto,blue)%cn%C(auto,reset),\\ %C(auto,cyan)%ar%C(auto,reset)]"
-            gflog = log -p --cc --graph --decorate
+    gflog = log -p --cc --graph --decorate
 [filter "hawser"]
 	clean = git hawser clean %f
 	smudge = git hawser smudge %f
@@ -32,3 +32,5 @@
 	tool = opendiff
 [difftool]
 	prompt = false
+[push]
+	default = simple
