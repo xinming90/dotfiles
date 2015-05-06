@@ -82,7 +82,10 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 #
+alias qj="export http_proxy='http://theironislands.f.getqujing.net:36779'\texport https_proxy='http://theironislands.f.getqujing.net:36779'"
+
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+
 source ~/opt/app/virtualenv/zeus/bin/activate
-cd ~/github/vagrant
+cd ~/github/zeus_in_vagrant
