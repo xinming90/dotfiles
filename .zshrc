@@ -84,14 +84,26 @@ source $ZSH/oh-my-zsh.sh
 #
 alias qj="export http_proxy='http://theironislands.f.getqujing.net:36779'\texport https_proxy='http://theironislands.f.getqujing.net:36779'"
 #alias vim="vim -O"
-alias emacs="/Users/ming/opt/app/emacs/bin/emacs -nw"
+
+alias emacs="/Users/ming/opt/app/emacs/bin/emacsclient -t"
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
-export EDITOR=emacs
+export EDITOR="/Users/ming/opt/app/emacs/bin/emacsclient -t"
 
-#source ~/opt/app/virtualenv/zeus/bin/activate
-#cd ~/github/zeus_in_vagrant
+
+source ~/opt/app/virtualenv/zeus/bin/activate
+cd ~/github/zeus_in_vagrant
 
 source ~/opt/app/virtualenv/virtualenv/bin/activate
 cd ~/github/vagrant
+
+# docker
+export DOCKER_HOST=tcp://192.168.59.103:2376
+export DOCKER_CERT_PATH=/Users/ming/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1
+export NO_PROXY=192.168.59.103
+
+#alias for cnpm
+alias cnpm="npm --registry=http://registry.cnpmjs.org \
+  --cache=$HOME/.npm/.cache/cnpm"
