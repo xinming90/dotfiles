@@ -85,17 +85,12 @@ source $ZSH/oh-my-zsh.sh
 alias qj="export http_proxy='http://theironislands.f.getqujing.net:36779'\texport https_proxy='http://theironislands.f.getqujing.net:36779'"
 #alias vim="vim -O"
 
-alias emacs="/Users/ming/opt/app/emacs/bin/emacsclient -t"
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
-export EDITOR="/Users/ming/opt/app/emacs/bin/emacsclient -t"
 
 
-source ~/opt/app/virtualenv/zeus/bin/activate
-cd ~/github/zeus_in_vagrant
-
-source ~/opt/app/virtualenv/virtualenv/bin/activate
+source ~/opt/app/virtualenv/default/bin/activate
 cd ~/github/vagrant
 
 # docker
