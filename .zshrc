@@ -89,10 +89,12 @@ alias qj="export http_proxy='http://theironislands.f.getqujing.net:36779'\texpor
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export EDITOR=emacs
-
+alias e="~/opt/app/emacs/bin/emacs"
+alias emacs="~/opt/app/emacs/bin/emacs"
 source ~/opt/app/virtualenv/default/bin/activate
 cd ~/github/vagrant
 
+alias docker="docker --tlsverify=false"
 # docker
 export DOCKER_HOST=tcp://192.168.59.103:2376
 export DOCKER_CERT_PATH=/Users/ming/.boot2docker/certs/boot2docker-vm
@@ -100,5 +102,7 @@ export DOCKER_TLS_VERIFY=1
 export NO_PROXY=192.168.59.103
 
 #alias for cnpm
-alias cnpm="npm --registry=http://registry.cnpmjs.org \
-  --cache=$HOME/.npm/.cache/cnpm"
+alias cnpm="npm --registry=https://registry.npm.taobao.org \
+  --cache=$HOME/.npm/.cache/cnpm \
+  --disturl=https://npm.taobao.org/dist \
+  --userconfig=$HOME/.cnpmrc"
