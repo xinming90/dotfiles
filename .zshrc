@@ -89,8 +89,8 @@ alias qj="export http_proxy='http://theironislands.f.getqujing.net:36779'\texpor
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export EDITOR=emacs
-alias e="~/opt/app/emacs/bin/emacs"
-alias emacs="~/opt/app/emacs/bin/emacs"
+alias e="~/opt/app/emacs/bin/emacs -nw"
+alias emacs="~/opt/app/emacs/bin/emacs -nw"
 source ~/opt/app/virtualenv/default/bin/activate
 cd ~/github/vagrant
 
