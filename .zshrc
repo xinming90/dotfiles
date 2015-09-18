@@ -50,7 +50,9 @@ plugins=(autojump)
 
 # User configuration
 
-export PATH="/Users/ming/opt/app/python27/bin:/Users/ming/opt/app/python34/bin:/Users/ming/Library/Android/sdk/platform-tools:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
+export GOPATH="/Users/ming/work"
+export GOROOT=`go env GOROOT`
+export PATH="/Users/ming/opt/app/python27/bin:/Users/ming/opt/app/python34/bin:/Users/ming/Library/Android/sdk/platform-tools:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:$GOPATH/bin"
 #export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -92,6 +94,15 @@ export EDITOR=emacs
 alias e="~/opt/app/emacs/bin/emacs -nw"
 alias emacs="~/opt/app/emacs/bin/emacs -nw"
 source ~/opt/app/virtualenv/default/bin/activate
+cd ~/github/vagrant
+
+
+# cd ~/github/sakura
+# cd ~/github/ugc
+# source ~/opt/app/virtualenv/zeus/bin/activate
+
+# cd ~/github/zeus_in_vagrant
+
 cd ~/github/vagrant
 
 alias docker="docker --tlsverify=false"
