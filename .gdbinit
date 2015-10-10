@@ -7,3 +7,8 @@
 
 #
 set print pretty on
+
+
+## follow-fork-mode
+# show follow-fork-mode
+# set follow-fork-mode child/parent
